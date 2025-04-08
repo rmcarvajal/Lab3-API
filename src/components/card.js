@@ -1,9 +1,9 @@
 class card extends HTMLElement{
     constructor(){
         super()
-        this.attachShadow({mode:'open'})
-        this.shadowRoot.innerHTML=
-        `
+        this.attachShadow({mode: 'open'})
+        this.shadowRoot.innerHTML = 
+                    `
                 <div class="card">
             <div class="image"></div>
             <h1>name</h1>
@@ -20,8 +20,10 @@ class card extends HTMLElement{
     background-color: aqua;
 }
 </style>
-        `
+        `;
     }
 }
+
+
 
 export default card
